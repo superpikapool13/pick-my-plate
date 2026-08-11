@@ -1,0 +1,33 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    max-width: fit-content;
+}
+
+.image {
+    text-align: center;
+}
+
+.image img {
+    max-width: 120px;
+    max-height: 120px;
+    filter: drop-shadow(2px 2px 5px);
+}
+
+.name {
+    text-align: center;
+}
+
+.unselected {
+    composes: box;
+    background-color: lightcoral;
+}
+
+.selected {
+    composes: box;
+    background-color: lightgreen;
+}
