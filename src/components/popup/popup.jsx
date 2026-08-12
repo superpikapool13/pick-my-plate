@@ -38,7 +38,6 @@ export default function PopUp(props) {
         myCanvas.style.cssText="position:absolute; width:100%; height:100%; top:0; left: 0; z-index:9999; pointer-events: none;"
         props.ref.current.insertBefore(myCanvas, props.ref.current.firstChild);
 
-        props.ref.current.style.cssText="position:relative"
         var myConfetti = confetti.create(myCanvas, {
             resize: true,
             useWorker: true

@@ -53,8 +53,6 @@ export default function FoodIconList(props) {
 
             <PopUp
                 ref={dialogRef}
-                // result={cuisines[finalIndex]}
-                message="Running selection..."
             />
 
             <section className={styles.foodIconList}>

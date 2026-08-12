@@ -2,10 +2,11 @@
     padding: 25px;
     border-radius: 8px;
     border: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     font-family: sans-serif;
     z-index: 1000;
+    background-color: #4A5568;
+    color: white;
 }
 .popupDialog::backdrop {
     background-color: rgba(0, 0, 0, 0.5);
@@ -14,11 +15,16 @@
 
 .closeBtn {
     padding: 6px 12px;
-    border: 1px solid #ccc;
-    background-color: #fff;
+    border: 2px solid #2D374811;
+    background-color: #2D3748;
+    color: white;
+    box-shadow: 0 4px 12px rgba(127, 0, 0, 0.3);
     border-radius: 4px;
-    cursor: pointer;
     font-size: 14px;
+}
+.closeBtn:hover {
+    transform-origin: center;
+    transform: scale(1.2);
 }
 
 .wrapper {
@@ -27,13 +33,8 @@
     flex-wrap: nowrap;
     gap: 2px;
     border-radius: 5px;
-    border: 2px solid grey;
     max-width: fit-content;
-    margin: 1vh auto;
-}
-
-.image {
-    text-align: center;
+    margin: 1vh auto 2vh auto;
 }
 
 .image img {
@@ -43,5 +44,5 @@
 }
 
 .name {
-    text-align: center;
+    font-size: larger;
 }
