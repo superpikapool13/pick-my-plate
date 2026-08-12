@@ -29,6 +29,8 @@ import thali from "./thali.webp"
 import tiramisu from "./tiramisu.webp"
 import waffle from "./waffle.webp"
 
+import placeholder from "./placeholder.webp"
+
 export {
     biryani,
     burger,
@@ -58,5 +60,5 @@ export {
     thali,
     tiramisu,
     waffle,
-
+    placeholder,
 };
