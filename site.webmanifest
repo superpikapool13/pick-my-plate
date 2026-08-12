@@ -1,0 +1,15 @@
+{
+  "name": "Pick My Plate",
+  "short_name": "Pick-My-Plate",
+  "icons": [
+    {
+      "src": "./apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
