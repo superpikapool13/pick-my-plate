@@ -5,7 +5,7 @@ export default function Header(props) {
     return (
         <header className={styles.header}>
             <a
-                href="https://github.com/superpikapool13/"
+                href="https://github.com/superpikapool13/pick-my-plate"
                 className={styles.githubCorner}
                 aria-label="View source on GitHub"
             >

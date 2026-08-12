@@ -8,7 +8,7 @@ export default function App() {
 
     return (
         <>
-            <Header title="Choose Your Food!" />
+            <Header title="Pick My Plate!" />
 
             <Description />
 

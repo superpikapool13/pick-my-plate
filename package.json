@@ -1,11 +1,14 @@
 {
-  "name": "food-chooser-app",
+  "name": "pick-my-plate",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://superpikapool13.github.io/pick-my-plate",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },

@@ -5,12 +5,10 @@ export default function Description(props) {
     return (
         <section className={styles.description}>
             <p>
-                Can't decide what to choose to eat? We can help!
+                Tired of choosing what to eat?
             </p>
             <p>
-                Simply select or deselect the cuisines that are acceptable to you, and then click "Choose!"
-                <br />
-                This will select a cuisine for you, taking the weight of the choice off your shoulders.
+                Simply select or deselect the cuisines you like, and let us decide for you!
             </p>
             <p>
                 Bon Appetit!
