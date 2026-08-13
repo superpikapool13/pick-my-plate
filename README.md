@@ -1,4 +1,4 @@
-# Pick My Plate?
+# Pick My Plate!
 
 An interactive React app designed to solve daily mealtime indecision. 
 Browse through a grid of cuisines, select your cravings, and let the app randomly pick what you should eat!
@@ -53,4 +53,5 @@ Open your browser and navigate to [`localhost:5173/`](http://localhost:5173/)
 
 ## License
 
-This project is available under the [PolyForm Noncommercial License](https://polyformproject.org/licenses/noncommercial/1.0.0) — See [LICENSE](License.txt)
+This project is available under the [PolyForm Noncommercial License](https://polyformproject.org/licenses/noncommercial/1.0.0) — See [LICENSE](LICENSE.md).  
+Free for personal, educational, and non-commercial use. Commercial use is strictly prohibited.

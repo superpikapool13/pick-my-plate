@@ -1,3 +1,6 @@
+Required Notice: Copyright 2026 [superpikapool13](https://github.com/superpikapool13)  
+Licensed under the [PolyForm Noncommercial License 1.0.0](#polyform-noncommercial-license-100).
+
 # PolyForm Noncommercial License 1.0.0
 
 <https://polyformproject.org/licenses/noncommercial/1.0.0>
