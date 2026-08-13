@@ -8,3 +8,9 @@
     justify-content: center;
     align-content: center;
 }
+
+.ButtonList {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

@@ -6,7 +6,7 @@ import Button from "./button/button";
 import PopUp from './popup/popup';
 
 export default function FoodIconList(props) {
-    const [foodArray, setFoodArray] = useState( Array(cuisines.length).fill(true) );
+    const [foodArray, setFoodArray] = useState( Array.from({ length: cuisines.length }, () => Math.random() >= 0.5) );
     
     const dialogRef = useRef(null);
 
@@ -28,6 +28,14 @@ export default function FoodIconList(props) {
         );
     }
 
+    function selectAll() {
+        setFoodArray((prev) => prev.map(() => true))
+    }
+
+    function unselectAll() {
+        setFoodArray((prev) => prev.map(() => false))
+    }
+
     function chooseFinal () {
         const count = foodArray.filter(Boolean).length;
         var finalIndex;
@@ -47,9 +55,30 @@ export default function FoodIconList(props) {
         dialogRef.current?.startSequence(item);
     };
 
+    function ButtonList() {
+        return (
+            <section className={styles.ButtonList}>
+                <Button 
+                    text = "Select All!"
+                    handler={() => selectAll()} 
+                />
+
+                <Button 
+                    text = "Choose!"
+                    handler={() => chooseFinal()} 
+                />
+
+                <Button 
+                    text = "Unselect All!"
+                    handler={() => unselectAll()} 
+                />
+            </section>
+        )
+    }
+
     return (
         <>
-            <Button handler={() => chooseFinal()} />
+            <ButtonList />
 
             <PopUp
                 ref={dialogRef}

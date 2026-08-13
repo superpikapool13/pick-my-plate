@@ -7,7 +7,7 @@ export default function Button(props) {
             onClick={props.handler}
             className={styles.button}
         >
-            Choose!
+            {props.text}
         </button>
     )
 }

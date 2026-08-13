@@ -13,6 +13,13 @@ export default function PopUp(props) {
     const intervalRef = useRef(null);
     const timeoutRef = useRef(null);
 
+    var myCanvas = document.createElement('canvas');
+    var myConfetti = confetti.create(myCanvas, {
+        resize: true,
+        useWorker: true
+    });
+
+
     function startModalSequence(resultData) {
         props.ref.current.showModal();
 
@@ -34,29 +41,18 @@ export default function PopUp(props) {
     };
 
     function playConfetti(){
-        var myCanvas = document.createElement('canvas');
         myCanvas.style.cssText="position:absolute; width:100%; height:100%; top:0; left: 0; z-index:9999; pointer-events: none;"
         props.ref.current.insertBefore(myCanvas, props.ref.current.firstChild);
-
-        var myConfetti = confetti.create(myCanvas, {
-            resize: true,
-            useWorker: true
-        });
 
         myConfetti({
             particleCount: 1500,
             zIndex: 9999,
         });
+    }
 
-        setTimeout(() => {
-            endConfetti()
-        }, 3000);
-
-        function endConfetti(){
-            myConfetti.reset();
-            props.ref.current.style.cssText=null;
-            props.ref.current.removeChild(myCanvas)
-        }
+    function endConfetti(){
+        myConfetti.reset();
+        props.ref.current.removeChild(myCanvas)
     }
 
     function handleClose() {
@@ -64,7 +60,7 @@ export default function PopUp(props) {
         clearTimeout(timeoutRef.current);
         imgRef.current.src = placeholder;
         nameRef.current.textContent = null;
-        props.ref.current.getElementsByTagName('canvas')[0].style.cssText="display:none;"
+        endConfetti();
         props.ref.current.close();
     };
 
