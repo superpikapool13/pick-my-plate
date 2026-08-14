@@ -2,6 +2,10 @@ import * as images from './images/images';
 
 export const cuisines = [
     {
+        name:   "Fries",
+        img:    images.fries
+    },
+    {
         name:   "Pizza",
         img:    images.pizza
     },
@@ -20,6 +24,10 @@ export const cuisines = [
     {
         name:   "Rolls",
         img:    images.rolls
+    },
+    {
+        name:   "Sushi",
+        img:    images.sushi
     },
     {
         name:   "North Indian",
@@ -70,6 +78,10 @@ export const cuisines = [
         img:    images.chickenlollipop
     },
     {
+        name:   "Omlette",
+        img:    images.omlette
+    },
+    {
         name:   "Desserts",
         img:    images.desserts
     },
@@ -82,6 +94,10 @@ export const cuisines = [
         img:    images.momos
     },
     {
+        name:   "Soup",
+        img:    images.soup
+    },
+    {
         name:   "Noodles",
         img:    images.noodles
     },
@@ -92,6 +108,10 @@ export const cuisines = [
     {
         name:   "Pastry",
         img:    images.pastry
+    },
+    {
+        name:   "Tacos",
+        img:    images.tacos
     },
     {
         name:   "Salad",
@@ -113,4 +133,8 @@ export const cuisines = [
         name:   "Ice Cream",
         img:    images.icecream
     },
-]
+    {
+        name:   "Vada Paav",
+        img:    images.vadapav
+    },
+].sort( () => Math.random()-0.5 )

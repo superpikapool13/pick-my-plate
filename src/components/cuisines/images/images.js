@@ -28,6 +28,12 @@ import tea from "./tea.webp"
 import thali from "./thali.webp"
 import tiramisu from "./tiramisu.webp"
 import waffle from "./waffle.webp"
+import fries from "./fries.webp"
+import sushi  from "./sushi.webp"
+import vadapav from "./vada_pav.webp"
+import tacos from "./tacos.webp"
+import soup from "./soup.webp"
+import omlette from "./omlette.webp"
 
 import placeholder from "./placeholder.webp"
 
@@ -61,4 +67,10 @@ export {
     tiramisu,
     waffle,
     placeholder,
+    fries,
+    sushi,
+    vadapav,
+    tacos,
+    soup,
+    omlette,
 };
